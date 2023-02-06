@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>com.code</artifactId>
+    <artifactId>Chapter5</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -13,8 +13,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.7.1</version>
-            <scope>test</scope>
+            <version>6.10</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

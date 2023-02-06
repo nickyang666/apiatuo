@@ -1,0 +1,13 @@
+package com.course.testng.suite;
+
+import org.testng.annotations.Test;
+
+@Test
+public class PayTest {
+
+
+    public void paySuccess(){
+        System.out.println("支付成功");
+    }
+
+}

@@ -10,6 +10,11 @@ public class EventLoopTest {
 
         log.info("专注写bug！");
         log.error("这是错误日志");
+        try {
+
+        }catch (Exception e) {
+
+        }
     }
 }
 
