@@ -13,14 +13,15 @@ public class SuiteConfig {
     public  void beforeSuit(){
 
         System.out.println("before suit 运行啦！！");
+        log.info("beforesuite套件：");
     }
 
     @AfterSuite
 
     public void afterSuite(){
         System.out.println("after suite 运行啦！！");
-
-    };
+        log.info("aftersuite套件");
+    }
 
 
 
@@ -34,6 +35,7 @@ public class SuiteConfig {
 
     @AfterTest
     public void afterTest(){
-        System.out.println("");
+        System.out.println("test执行结束之后运行");
+        log.info("用例执行结束之后");
     }
 }
