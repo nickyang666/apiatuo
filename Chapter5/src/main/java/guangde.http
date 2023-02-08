@@ -2,3 +2,6 @@ GET http://www.shgdhr.com.cn/guangde/api/salary/list
 Content-Type: application/json
 
 { }
+
+
+
