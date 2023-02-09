@@ -14,6 +14,7 @@ public class MultiThreadOnAnnotion {
     public void test() {
         System.out.println(1);
         System.out.printf("Thread ID:%s%n", Thread.currentThread().getId());
+
     }
 }
 
