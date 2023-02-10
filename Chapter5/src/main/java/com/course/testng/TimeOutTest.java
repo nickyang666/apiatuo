@@ -14,6 +14,7 @@ public class TimeOutTest {
         Thread.sleep(2000);
     }
 
+    //超时测试
     @Test(timeOut = 2000)
     public void testFailed() throws InterruptedException {
         Thread.sleep(3000);
