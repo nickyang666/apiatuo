@@ -1,0 +1,33 @@
+POST  http://172.16.5.130:8889/postdemo
+Content-Type: application/json
+
+{
+
+}
+
+###
+POST  http://127.0.0.1:8889/postwithparam
+Content-Type: application/json
+
+{
+  "name": "张三",
+  "sex": "man"
+}
+
+###
+GET http://127.0.0.1:8889/get/with/cookies
+Content-Type: text/html,chatset=gbk
+Cookie: login=true
+
+{}
+
+
+###
+POST http://127.0.0.1:8889/post/with/cookies
+Cookie: ""
+Content-Type: application/json
+
+{
+  "name": "zhangsan",
+  "age": 18
+}

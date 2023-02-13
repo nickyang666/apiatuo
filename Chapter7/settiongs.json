@@ -1,0 +1,21 @@
+[
+
+  {
+    "response": {
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "*",
+        "Access-Control-Max-Age": "3600",
+        "Access-Control-Allow-Headers": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Content-Type": "text/html;charset=utf-8"
+      },
+      "latency": {
+        "duration": 1,
+        "unit": "second"
+      }
+    },
+    "file_root": "api/sys/login",
+    "include": "login.json"
+  }
+]

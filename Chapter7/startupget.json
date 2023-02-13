@@ -1,0 +1,17 @@
+[
+  {
+    "description": "模拟一个没有get参数的请求",
+    "request": {
+      "uri": "/getdemo",
+      "method": "get"
+
+    },
+    "response": {
+      "text": "这是一个没有参数的请求",
+      "status":200,
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  }
+]

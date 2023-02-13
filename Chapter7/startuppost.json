@@ -1,0 +1,35 @@
+[
+  {
+    "description": "模拟一个post请求",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "这是post请求"
+    }
+  },
+  {
+    "description": "这是另外一个请求",
+    "request":{
+     "uri": "/postwithparam",
+      "method": "post",
+      "forms": {
+        "name": "张三",
+        "sex": "man"
+      }
+    },
+      "response": {
+        "text": "另一个带参",
+        "headers": {
+          "Content-Type": "text/html,charset=gbk"
+        }
+      }
+
+      }
+
+
+]
