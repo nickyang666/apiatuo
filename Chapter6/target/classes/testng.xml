@@ -1,0 +1,27 @@
+<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name ="接口测试套件" verbose="1" preserve-order="true">
+    <parameter name="report.config" value="src/main/resources/config/report/extent-config.xml"/>
+    <parameter name="system.info" value="com.extentereport.listener.config.MySystemInfo"/>
+    <test name="测试模块"  preserve-order="true">
+        <classes>
+            <class name="com.tester.extend.demo.TestMethodsDemo"/>
+
+        </classes>
+
+    </test>
+
+
+    <!--配置监听器-->
+    <listeners>
+
+
+<!--        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+<!--        <listener class-name="com.tester.extend.demo.ExtentTestNGIReporterListener"/>-->
+        <listener class-name="com.extentereport.listener.MyExtentTestNgFormatter"/>
+
+    </listeners>
+
+
+</suite>
