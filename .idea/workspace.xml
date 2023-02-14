@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ca2a1b6-fb90-436e-b9b1-d68820ddef16" name="变更" comment="新增配置项和extendreport文件改写">
-      <change afterPath="$PROJECT_DIR$/Chapter7/1.redme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/TestAPI.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/moco-runner-0.11.0-standalone.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/settiongs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/startupget.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/startuppost.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/startupwithcookies.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/startuupwithheader.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/startwithredirect.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter7/starup.json" afterDir="false" />
+    <list default="true" id="1ca2a1b6-fb90-436e-b9b1-d68820ddef16" name="变更" comment="增加moco框架模拟">
+      <change afterPath="$PROJECT_DIR$/Chapter9/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/cookies/MyCookiesForGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/demo/MyHttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter9/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter9/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter9/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7/1.redme" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7/1.redme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7/startupwithcookies.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7/startupwithcookies.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTTP Request" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,29 +97,87 @@
       <recent name="D:\project\apiatuo" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP 请求.TestAPI | #4">
-    <configuration name="TestAPI | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Chapter7/TestAPI.http" index="3" requestIdentifier="#3" runType="运行单个请求">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.MyCookiesForGet.testGetCookies">
     <configuration name="TestAPI | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Chapter7/TestAPI.http" index="4" requestIdentifier="#4" runType="运行单个请求">
       <method v="2" />
     </configuration>
-    <configuration name="TestAPI | ##" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Chapter7/TestAPI.http" index="2" requestIdentifier="##" runType="运行单个请求">
-      <method v="2" />
+    <configuration name="MyCookiesForGet" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.httpclient.cookies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.course.httpclient.cookies" />
+      <option name="MAIN_CLASS_NAME" value="com.course.httpclient.cookies.MyCookiesForGet" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TestAPI | ##3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Chapter7/TestAPI.http" index="4" requestIdentifier="##3" runType="运行单个请求">
-      <method v="2" />
+    <configuration name="MyCookiesForGet.testGetCookies" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.httpclient.cookies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.course.httpclient.cookies" />
+      <option name="MAIN_CLASS_NAME" value="com.course.httpclient.cookies.MyCookiesForGet" />
+      <option name="METHOD_NAME" value="testGetCookies" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TestAPI | ###2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Chapter7/TestAPI.http" index="4" requestIdentifier="###2" runType="运行单个请求">
-      <method v="2" />
+    <configuration name="MyHttpClient" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.httpclient.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.course.httpclient.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.course.httpclient.demo.MyHttpClient" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyHttpClient.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chapter9" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.httpclient.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.course.httpclient.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.course.httpclient.demo.MyHttpClient" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MyCookiesForGet.testGetCookies" />
+        <item itemvalue="TestNG.MyCookiesForGet" />
+        <item itemvalue="TestNG.MyHttpClient.test1" />
+        <item itemvalue="TestNG.MyHttpClient" />
         <item itemvalue="HTTP 请求.TestAPI | #4" />
-        <item itemvalue="HTTP 请求.TestAPI | ##3" />
-        <item itemvalue="HTTP 请求.TestAPI | ###2" />
-        <item itemvalue="HTTP 请求.TestAPI | #3" />
-        <item itemvalue="HTTP 请求.TestAPI | ##" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +192,7 @@
       <workItem from="1676008438339" duration="8042000" />
       <workItem from="1676017121454" duration="1267000" />
       <workItem from="1676018411292" duration="2951000" />
-      <workItem from="1676251051851" duration="13813000" />
+      <workItem from="1676251051851" duration="18719000" />
     </task>
     <task id="LOCAL-00001" summary="新增配置项和extendreport文件改写">
       <created>1676251324264</created>
@@ -146,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676251324264</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加moco框架模拟">
+      <created>1676275938056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676275938056</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +217,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="新增配置项和extendreport文件改写" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增配置项和extendreport文件改写" />
+    <MESSAGE value="增加moco框架模拟" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加moco框架模拟" />
   </component>
 </project>

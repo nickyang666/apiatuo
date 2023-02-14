@@ -1,0 +1,244 @@
+POST http://127.0.0.1:8889/post/with/cookies
+Content-Type: application/json
+Content-Length: 37
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: login=true
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "zhangsan",
+  "age": 18
+}
+
+###
+
+POST http://127.0.0.1:8889/post/with/cookies
+Content-Type: application/json
+Content-Length: 37
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: login=true
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "zhangsan",
+  "age": 18
+}
+
+###
+
+POST http://127.0.0.1:8889/post/with/cookies
+Content-Type: application/json
+Content-Length: 37
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: login=true
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "zhangsan",
+  "age": 18
+}
+
+###
+
+POST http://127.0.0.1:8889/post/with/cookies
+Content-Type: application/json
+Content-Length: 37
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: login=true
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "zhangsan",
+  "age": 18
+}
+
+###
+
+GET http://127.0.0.1:8889/get/with/cookies
+Content-Type: text/html,chatset=gbk
+Content-Length: 2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: login=true
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{}
+
+<> 2023-02-13T143747.200.html
+
+###
+
+GET http://127.0.0.1:8889/get/with/cookies
+Content-Type: application/json,text/html,chatset=gbk
+Content-Length: 2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: login=true
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{}
+
+<> 2023-02-13T143655.200.html
+
+###
+
+GET http://127.0.0.1:8889/get/with/cookies
+Content-Type: application/json
+Accept: text/html,chatset=gbk
+Content-Length: 2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: login=true
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{}
+
+<> 2023-02-13T143626.200.html
+
+###
+
+GET http://127.0.0.1:8889/get/with/cookies
+Content-Type: application/json
+Content-Length: 2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: login=true
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{}
+
+<> 2023-02-13T143454.200.html
+
+###
+
+POST http://127.0.0.1:8889/postwithparam
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "张三",
+  "sex": "man"
+}
+
+###
+
+POST http://127.0.0.1:8889/postwithparam
+Content-Type: application/json
+Content-Length: 36
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name":"张三",
+  "sex":"man"
+}
+
+###
+
+POST http://172.16.5.130:8889/postwithparam
+Content-Type: application/json
+Content-Length: 36
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name":"张三",
+  "sex":"man"
+}
+
+###
+
+POST http://172.16.5.130:8889/postwithparam
+Content-Type: application/json
+Content-Length: 36
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name":"张三",
+  "sex":"man"
+}
+
+###
+
+POST http://172.16.5.130:8889/postwithparam
+Content-Type: application/json
+Content-Length: 36
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name":"张三",
+  "sex":"man"
+}
+
+###
+
+POST http://172.16.5.130:8889/postdemo
+Content-Type: application/json
+Content-Length: 4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{  }
+
+<> 2023-02-13T133236.200.html
+
+###
+
+POST http://172.16.5.130:8889/postdemo
+Content-Type: application/json
+Content-Length: 4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{  }
+
+<> 2023-02-13T133141.200.txt
+
+###
+
+POST http://172.16.5.130:8889/postdemo
+Content-Type: application/json
+Content-Length: 4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{  }
+
+###
+
+POST http://127.0.1.1:8889/postdemo
+Content-Type: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://127.0.1.1:8889/postdemo
+Content-Type: application/json
+Content-Length: 2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{}
+
+###
+
