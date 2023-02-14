@@ -192,3 +192,706 @@ DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kep
 DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
 DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@52e677af
 DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://172.16.5.130:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 172.16.5.130:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /getCookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 172.16.5.130:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 172.16.5.130:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Set-Cookie: login=true; Path=/[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 19[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Set-Cookie: login=true; Path=/
+DEBUG main org.apache.http.headers - << Content-Length: 19
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:172.16.5.130, path:/, expiry:null]
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2145433b
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://172.16.5.130:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 172.16.5.130:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 172.16.5.130][path: /][expiry: null] match [172.16.5.130:8889/get/with/cookies]
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /get/with/cookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /get/with/cookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 172.16.5.130:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: login=true[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /get/with/cookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 172.16.5.130:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.headers - >> Cookie: login=true
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 15[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Content-Length: 15
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xd5][0xe2][0xca][0xc7][0xb4][0xf8]cookies[0xb5][0xc4]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@75c072cb
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /getCookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Set-Cookie: login=true; Path=/[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 19[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Set-Cookie: login=true; Path=/
+DEBUG main org.apache.http.headers - << Content-Length: 19
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:127.0.0.1, path:/, expiry:null]
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2145433b
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 127.0.0.1][path: /][expiry: null] match [127.0.0.1:8889/get/with/cookies]
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /get/with/cookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /get/with/cookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: login=true[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /get/with/cookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.headers - >> Cookie: login=true
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 15[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Content-Length: 15
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xd5][0xe2][0xca][0xc7][0xb4][0xf8]cookies[0xb5][0xc4]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@75c072cb
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /getCookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Set-Cookie: login=true; Path=/[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 19[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Set-Cookie: login=true; Path=/
+DEBUG main org.apache.http.headers - << Content-Length: 19
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:127.0.0.1, path:/, expiry:null]
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2145433b
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 127.0.0.1][path: /][expiry: null] match [127.0.0.1:8889/get/with/cookies]
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /get/with/cookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /get/with/cookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: login=true[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /get/with/cookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.headers - >> Cookie: login=true
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 15[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Content-Length: 15
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xd5][0xe2][0xca][0xc7][0xb4][0xf8]cookies[0xb5][0xc4]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@75c072cb
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /getCookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Set-Cookie: login=true; Path=/[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 19[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Set-Cookie: login=true; Path=/
+DEBUG main org.apache.http.headers - << Content-Length: 19
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:127.0.0.1, path:/, expiry:null]
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2890c451
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 127.0.0.1][path: /][expiry: null] match [127.0.0.1:8889/post/with/cookies]
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "POST /post/with/cookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "conten-type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "charset: gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 30[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: text/plain; charset=UTF-8[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: login=true[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> conten-type: application/json
+DEBUG main org.apache.http.headers - >> charset: gbk
+DEBUG main org.apache.http.headers - >> Content-Length: 30
+DEBUG main org.apache.http.headers - >> Content-Type: text/plain; charset=UTF-8
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.headers - >> Cookie: login=true
+DEBUG main org.apache.http.wire -  >> "{"name":"zhangsan","age":"18"}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 33[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Content-Length: 33
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "{"zhangsan":" succes","status":1}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@691a7f8f
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /getCookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Set-Cookie: login=true; Path=/[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 19[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Set-Cookie: login=true; Path=/
+DEBUG main org.apache.http.headers - << Content-Length: 19
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:127.0.0.1, path:/, expiry:null]
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2890c451
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 127.0.0.1][path: /][expiry: null] match [127.0.0.1:8889/post/with/cookies]
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "POST /post/with/cookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "conten-type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "charset: gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 30[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: text/plain; charset=UTF-8[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: login=true[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> conten-type: application/json
+DEBUG main org.apache.http.headers - >> charset: gbk
+DEBUG main org.apache.http.headers - >> Content-Length: 30
+DEBUG main org.apache.http.headers - >> Content-Type: text/plain; charset=UTF-8
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.headers - >> Cookie: login=true
+DEBUG main org.apache.http.wire -  >> "{"name":"zhangsan","age":"18"}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 33[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Content-Length: 33
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "{"zhangsan":" succes","status":1}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@691a7f8f
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /getCookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Set-Cookie: login=true; Path=/[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 19[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Set-Cookie: login=true; Path=/
+DEBUG main org.apache.http.headers - << Content-Length: 19
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:127.0.0.1, path:/, expiry:null]
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2890c451
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 127.0.0.1][path: /][expiry: null] match [127.0.0.1:8889/post/with/cookies]
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "POST /post/with/cookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "conten-type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "charset: gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 30[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: text/plain; charset=UTF-8[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: login=true[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> conten-type: application/json
+DEBUG main org.apache.http.headers - >> charset: gbk
+DEBUG main org.apache.http.headers - >> Content-Length: 30
+DEBUG main org.apache.http.headers - >> Content-Type: text/plain; charset=UTF-8
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.headers - >> Cookie: login=true
+DEBUG main org.apache.http.wire -  >> "{"name":"zhangsan","age":"18"}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 33[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Content-Length: 33
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "{"zhangsan":" succes","status":1}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@691a7f8f
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /getCookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Set-Cookie: login=true; Path=/[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 19[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Set-Cookie: login=true; Path=/
+DEBUG main org.apache.http.headers - << Content-Length: 19
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:127.0.0.1, path:/, expiry:null]
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2890c451
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 127.0.0.1][path: /][expiry: null] match [127.0.0.1:8889/post/with/cookies]
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "POST /post/with/cookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "conten-type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "charset: gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 30[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: text/plain; charset=UTF-8[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: login=true[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> conten-type: application/json
+DEBUG main org.apache.http.headers - >> charset: gbk
+DEBUG main org.apache.http.headers - >> Content-Length: 30
+DEBUG main org.apache.http.headers - >> Content-Type: text/plain; charset=UTF-8
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.headers - >> Cookie: login=true
+DEBUG main org.apache.http.wire -  >> "{"name":"zhangsan","age":"18"}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 33[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Content-Length: 33
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "{"zhangsan":" succes","status":1}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@691a7f8f
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /getCookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Set-Cookie: login=true; Path=/[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 19[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Set-Cookie: login=true; Path=/
+DEBUG main org.apache.http.headers - << Content-Length: 19
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:127.0.0.1, path:/, expiry:null]
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2890c451
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 127.0.0.1][path: /][expiry: null] match [127.0.0.1:8889/post/with/cookies]
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "POST /post/with/cookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "conten-type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "charset: gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 30[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: text/plain; charset=UTF-8[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: login=true[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> conten-type: application/json
+DEBUG main org.apache.http.headers - >> charset: gbk
+DEBUG main org.apache.http.headers - >> Content-Length: 30
+DEBUG main org.apache.http.headers - >> Content-Type: text/plain; charset=UTF-8
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.headers - >> Cookie: login=true
+DEBUG main org.apache.http.wire -  >> "{"name":"zhangsan","age":"18"}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 33[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Content-Length: 33
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "{"zhangsan":" succes","status":1}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@691a7f8f
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /getCookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Set-Cookie: login=true; Path=/[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 19[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Set-Cookie: login=true; Path=/
+DEBUG main org.apache.http.headers - << Content-Length: 19
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:127.0.0.1, path:/, expiry:null]
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2890c451
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 127.0.0.1][path: /][expiry: null] match [127.0.0.1:8889/post/with/cookies]
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "POST /post/with/cookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "conten-type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "charset: gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 30[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: text/plain; charset=UTF-8[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: login=true[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> conten-type: application/json
+DEBUG main org.apache.http.headers - >> charset: gbk
+DEBUG main org.apache.http.headers - >> Content-Length: 30
+DEBUG main org.apache.http.headers - >> Content-Type: text/plain; charset=UTF-8
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.headers - >> Cookie: login=true
+DEBUG main org.apache.http.wire -  >> "{"name":"zhangsan","age":"18"}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 34[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Content-Length: 34
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "{"zhangsan":" success","status":1}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@691a7f8f
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "GET /getCookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> GET /getCookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Set-Cookie: login=true; Path=/[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 19[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Set-Cookie: login=true; Path=/
+DEBUG main org.apache.http.headers - << Content-Length: 19
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [login="true", version:0, domain:127.0.0.1, path:/, expiry:null]
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "[0xbb][0xf1][0xb5][0xc3]cookies[0xd0][0xc5][0xcf][0xa2][0xb3][0xc9][0xb9][0xa6]"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2890c451
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://127.0.0.1:8889
+DEBUG main org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 127.0.0.1:8889
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+DEBUG main org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 127.0.0.1][path: /][expiry: null] match [127.0.0.1:8889/post/with/cookies]
+DEBUG main org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+DEBUG main org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+DEBUG main org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.wire -  >> "POST /post/with/cookies HTTP/1.1[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "conten-type: application/json[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "charset: gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Length: 30[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Content-Type: text/plain; charset=UTF-8[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Host: 127.0.0.1:8889[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "Cookie: login=true[\r][\n]"
+DEBUG main org.apache.http.wire -  >> "[\r][\n]"
+DEBUG main org.apache.http.headers - >> POST /post/with/cookies HTTP/1.1
+DEBUG main org.apache.http.headers - >> conten-type: application/json
+DEBUG main org.apache.http.headers - >> charset: gbk
+DEBUG main org.apache.http.headers - >> Content-Length: 30
+DEBUG main org.apache.http.headers - >> Content-Type: text/plain; charset=UTF-8
+DEBUG main org.apache.http.headers - >> Host: 127.0.0.1:8889
+DEBUG main org.apache.http.headers - >> Connection: Keep-Alive
+DEBUG main org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_181)
+DEBUG main org.apache.http.headers - >> Cookie: login=true
+DEBUG main org.apache.http.wire -  >> "{"name":"zhangsan","age":"18"}"
+DEBUG main org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Length: 34[\r][\n]"
+DEBUG main org.apache.http.wire -  << "Content-Type: text/html,charset=gbk[\r][\n]"
+DEBUG main org.apache.http.wire -  << "[\r][\n]"
+DEBUG main org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << HTTP/1.1 200 OK
+DEBUG main org.apache.http.headers - << Content-Length: 34
+DEBUG main org.apache.http.headers - << Content-Type: text/html,charset=gbk
+DEBUG main org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+DEBUG main org.apache.http.wire -  << "{"zhangsan":" success","status":1}"
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@691a7f8f
+DEBUG main org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely

@@ -54,8 +54,36 @@ public class MyCookiesForGet {
             String name = cookie.getName();
             String value = cookie.getValue();
             System.out.println("cookie name = " + name
-                    + "\n  cookie value = " + value);
+                    + "\n"+"cookie value = " + value);
         }
+
+    }
+    //依赖上面的方法
+    @Test(dependsOnMethods = {"testGetCookies"})
+
+    public void testGetWithCookies() throws IOException{
+        //从配置文件取配置
+        String uri = bundle.getString("test.get.with.cookies");
+        //拼接，测试地址
+        String testUrl = this.url+uri;
+        //声明客户端、声明一个执行方法
+        HttpGet get = new HttpGet(testUrl);
+        DefaultHttpClient client = new DefaultHttpClient();
+        //        设置cookies信息
+        client.setCookieStore(this.store);
+        //        接相应
+        HttpResponse response = client.execute(get);
+
+        //获取响应的状态码
+        int statusCode = response.getStatusLine().getStatusCode();
+        System.out.println("statusCode = " + statusCode);
+
+
+        if (statusCode == 200) {
+            String result = EntityUtils.toString(response.getEntity(),"gbk");
+            System.out.println(result);
+        }
+
 
     }
 
