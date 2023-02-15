@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ca2a1b6-fb90-436e-b9b1-d68820ddef16" name="变更" comment="Httpclient框架">
-      <change afterPath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/cookies/MyCookiesForPost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter7/startupwithcookies.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7/startupwithcookies.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter9/example.log" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/example.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter9/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/cookies/MyCookiesForGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/cookies/MyCookiesForGet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter9/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter9/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter9/target/classes/com/course/httpclient/cookies/MyCookiesForGet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/target/classes/com/course/httpclient/cookies/MyCookiesForGet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/cookies/MyCookiesForPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/cookies/MyCookiesForPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter9/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +202,7 @@
       <workItem from="1676017121454" duration="1267000" />
       <workItem from="1676018411292" duration="2951000" />
       <workItem from="1676251051851" duration="22030000" />
-      <workItem from="1676360118151" duration="5204000" />
+      <workItem from="1676360118151" duration="6271000" />
     </task>
     <task id="LOCAL-00001" summary="新增配置项和extendreport文件改写">
       <created>1676251324264</created>
@@ -229,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676343152425</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Httpclient框架">
+      <created>1676367458354</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676367458354</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

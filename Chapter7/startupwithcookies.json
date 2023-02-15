@@ -51,7 +51,7 @@
               },
       "status": 200,
       "json": {
-        "zhangsan":" success",
+        "zhangsan":"success",
         "status": 1
         }
       }
