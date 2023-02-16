@@ -114,7 +114,7 @@ public class MyCookiesForPost {
 
             //获取到结果值
          String success = (String) resultJson.get("zhangsan");
-         String status = (String) resultJson.get("status");
+         String  status = (String) resultJson.get("status");
         //具体的判断返回结果的值
         Assert.assertEquals("success",success);
         Assert.assertEquals("1",status);
