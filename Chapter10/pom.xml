@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.example</groupId>
+        <groupId>org.course</groupId>
         <artifactId>Chapter5</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -13,10 +13,12 @@
     <groupId>org.course</groupId>
     <artifactId>Chapter10</artifactId>
 
+    <!--属性提取，版本或者名称-->
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <swagger.version>2.6.1</swagger.version>
     </properties>
     <dependencies>
         <dependency>
@@ -28,6 +30,16 @@
             <artifactId>spring-context</artifactId>
             <version>5.0.4.RELEASE</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
 
     </dependencies>

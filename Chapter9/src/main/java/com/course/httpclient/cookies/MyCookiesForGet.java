@@ -27,7 +27,7 @@ public class MyCookiesForGet {
     private CookieStore store;
     @BeforeTest
     public void beforeTest(){
-        bundle = ResourceBundle.getBundle("application", Locale.CHINA);
+        bundle = ResourceBundle.getBundle("httpcilent", Locale.CHINA);
         url = bundle.getString("test.url");
     }
 

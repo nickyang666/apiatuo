@@ -1,5 +1,7 @@
 package com.course.server;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
@@ -15,8 +17,10 @@ import java.util.Objects;
  * @time:2023/2/16 13:28
  */
 @RestController //标识为要扫描的类
+@Api(value ="/",description = "这是我的全部get方法" )//swagger接口文档
 public class MyGetMerhod {
     @RequestMapping(value = "/getCookies",method = RequestMethod.GET)
+    @ApiOperation(value = "通过这个方法可以访问cookies",httpMethod = "GET")//描述这个方法是做什么的
     public String getCookies(HttpServletResponse response){
 
         //声明cookie
@@ -35,6 +39,7 @@ public class MyGetMerhod {
 
 
     @RequestMapping(value = "/get/with/cookies",method = RequestMethod.GET)
+    @ApiOperation(value = "要求客户端携带cookies访问",httpMethod = "GET")//描述这个方法是做什么的
     public String getWithCookies(HttpServletRequest request){
         Cookie[] cookies= request.getCookies(); //添加cookies数组
 
@@ -64,6 +69,7 @@ public class MyGetMerhod {
     //第一种实现方法
     @RequestMapping(value = "/get/with/param",method = RequestMethod.GET) //访问方式get
     //定义携带参数类型都是数值型，string为字符串
+    @ApiOperation(value = "需要携带参数才能访问get请求的方法1",httpMethod = "GET")//描述这个方法是做什么的
     public Map<String,Integer> getList(@RequestParam Integer start,@RequestParam Integer end){
 
         //商品列表，map对象
@@ -85,6 +91,7 @@ public class MyGetMerhod {
     //{}路径多个可以增加/{}
     @RequestMapping(value = "/get/with/param/{start}/{end}")
     //另外一种实现PathVariable，路径访问
+    @ApiOperation(value = "需要携带参数才能访问的get方法2",httpMethod = "GET")//描述这个方法是做什么的
     public Map myGetList(@PathVariable Integer start,@PathVariable Integer end){
 
         Map<String,Integer> myGetList =new HashMap<>();
