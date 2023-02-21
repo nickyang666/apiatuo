@@ -44,8 +44,9 @@ public class MyPostMethod {
 
 
     //验证cookies，验证通过后发返回用户列表信息
-
+    //创建请求地址url，方法
     @RequestMapping(value = "/getUserList",method = RequestMethod.POST)
+    //swagger描述
     @ApiOperation(value = "获取用户列表",httpMethod = "POST")
     //加上httpservlet，不然cookie带不进来
     public  String  getUserList(HttpServletRequest request,
@@ -58,23 +59,22 @@ public class MyPostMethod {
         //验证cookies是否合法
         for (Cookie c: cookie) {
             //验证cookie
-            //==比的是地址，用equals
+            //==比的是地址，用equals，验证getName，cookies参数两个，c.getName和c.getValue,u.getUserName,四个验证参数
             if (c.getName().equals("login")
-                    && c.getValue().equals("true")
+                    &&c.getValue().equals("true")
                     &&u.getUserName().equals("zhangsan")
                     &&u.getPassword().equals("123456") ) {
         //从原user中新建对象，如果放在if中，只能在for循环中的判断
                 user=new User();
                 //新对象的新值
-                user.setUserName("lisi");
+                user.setUserName("赵四");
                 user.setAge("18");
                 user.setSex("man");
-
-
+                //loombook方法复写了toString
                 return user.toString();
             }
         }
-        return "参数不合法";
+        return "参数错误，请检查参数！";
 
     }
 

@@ -13,6 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * @description:swagger配置文件
  * 加载配置文件使用@Configuration  @EnableSwagger2加载配置文件
+ * 有个标准写法
  * 访问http://localhost:8888/swagger-ui.html
  * @author:yang
  * @time:2023/2/16 15:29

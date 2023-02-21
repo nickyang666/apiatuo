@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ca2a1b6-fb90-436e-b9b1-d68820ddef16" name="变更" comment="1.SpringBoot框架中get访问；&#10;2.get两种方式，携带参数请求的两种写法">
-      <change afterPath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/server/MyPostMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter11/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter11/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter11/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter11/src/main/resources/mapper/mysql.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter11/src/main/resources/mybatios-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter10/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter10/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/src/main/java/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/server/MyGetMerhod.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/server/MyGetMerhod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter5/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter6/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter6/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter9/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/cookies/MyCookiesForGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/src/main/java/com/course/httpclient/cookies/MyCookiesForGet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter9/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter9/src/main/resources/httpcilent.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/server/MyPostMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/server/MyPostMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10/target/Chapter10-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/target/Chapter10-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter10/target/classes/com/course/server/MyPostMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter10/target/classes/com/course/server/MyPostMethod.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,8 +94,8 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "aa6b87aeadf97f29ab05f4c4f7f30813",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "c665c9096795bae6dc6ddb47b83d75c2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -216,6 +215,10 @@
       <workItem from="1676515780050" duration="11343000" />
       <workItem from="1676533922774" duration="722000" />
       <workItem from="1676535592900" duration="4442000" />
+      <workItem from="1676597218333" duration="2139000" />
+      <workItem from="1676614503463" duration="1337000" />
+      <workItem from="1676877026691" duration="5099000" />
+      <workItem from="1676942065937" duration="499000" />
     </task>
     <task id="LOCAL-00001" summary="新增配置项和extendreport文件改写">
       <created>1676251324264</created>
