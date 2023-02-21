@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--logbak配置文件-->
+<!--logbak配置文件，不常用，固定内容，命名为logbak.xml-->
 <configuration>
 
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>

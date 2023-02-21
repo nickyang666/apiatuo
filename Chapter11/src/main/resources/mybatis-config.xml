@@ -19,10 +19,12 @@
 
         <!-- typeAliases,package-->
 <configuration>
+        <!--映射的包-->
     <typeAliases>
         <package name="com.course.model"/>
     </typeAliases>
     <mappers>
+        <!--可以是多个，mapper文件夹下相对路径-->
         <mapper resource="mapper/mysql.xml"/>
 
     </mappers>
