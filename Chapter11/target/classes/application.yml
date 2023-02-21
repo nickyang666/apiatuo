@@ -1,0 +1,27 @@
+#注释文件，yml文件配置,和spring的配置文件
+server:
+  port: 8899
+  #log文件配置
+logging:
+  path: logs
+  file: mylog.log
+  #srping配置
+spring:
+  application:
+    name: myTest
+  datasource:
+    #mysql配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/course?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: Iccc2015#@
+
+#mybatis配置
+mybatis:
+  #java bin对应的包
+  type-aliases-package: com.course.model
+  #写sql的,在resource文件创建
+  mapper-locations:
+    #resource文件下会创建个文件夹,mapper,里面会有mysql的xml文件映射，加载mapper文件下所有xml文件
+    - mapper/*
+  
