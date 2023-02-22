@@ -19,7 +19,7 @@ public class ConfigFile {
 
     //声明参数传递使用model类中定义的枚举
     public  static String  getUrl(InterfaceName name){
-        String address = bundle.getString("test。url");
+        String address = bundle.getString("test.url");
         String uri="";
         //最终的测试地址
         String testUrl;

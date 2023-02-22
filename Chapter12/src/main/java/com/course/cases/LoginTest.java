@@ -18,6 +18,8 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static com.course.utils.DatabaseUtil.getSqlSession;
+
 public class LoginTest {
 
 
@@ -52,7 +54,7 @@ public class LoginTest {
 
     @Test(description = "用户登陆失败接口")
     public void loginFalse() throws IOException {
-        SqlSession session = DatabaseUtil.getSqlSession();
+        SqlSession session = getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase",2);
         System.out.println(loginCase.toString());
         System.out.println(TestConfig.loginUrl);
