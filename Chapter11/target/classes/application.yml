@@ -10,7 +10,7 @@ spring:
   application:
     name: myTest
   datasource:
-    #mysql配置
+    #mysql配置，对照本地mysql版本，如果是8.0用这个，5.0不加cj
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/course?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
     username: root

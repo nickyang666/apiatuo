@@ -4,14 +4,16 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--命名空间，result返回数据类型-->
 <mapper namespace="com.course">
+
     <select id="getUserCount" resultType="Integer">
         select count(*) from user;
 
     </select>
-        <!--唯一索引-->
+
+        <!--唯一索引，入参parameter-->
     <insert id="addUser" parameterType="com.course.model.User">
-        insert into user(id,name,age,sex)
-        values(#{id},#{name},#{age},#{sex})
+        insert into user(name,age,sex)
+        values(#{name},#{age},#{sex})
 
     </insert>
 

@@ -1,6 +1,7 @@
 package com.course.controller;
 
 
+import com.course.model.User;
 import lombok.extern.slf4j.Slf4j;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -34,4 +35,35 @@ public class Demo {
        return template.selectOne("getUserCount");
 
     }
+
+    @RequestMapping(value = "/selectUser",method = RequestMethod.GET)
+    @ApiOperation(value = "获取用户列表",httpMethod = "GET")
+    public Object selectUser(){
+        return template.selectOne("selectUser");
+    }
+
+    @RequestMapping(value = "/addUser",method = RequestMethod.POST)
+    @ApiOperation(value = "这个是增加用户",httpMethod = "POST")
+    //需要有参数传递，方法内用requestbody
+    public int addUser(@RequestBody User user){
+       int result =  template.insert("addUser",user);
+        return result;
+    }
+
+    //更新
+
+    @RequestMapping(value = "/updateUser",method = RequestMethod.POST)
+    @ApiOperation(value = "更新用户信息",httpMethod = "POST")
+    public int updateUser(@RequestBody User user){
+
+       return template.update("updateUser",user);
+    }
+
+    @RequestMapping(value = "/deleteUser",method = RequestMethod.POST)
+    @ApiOperation(value = "删除用户信息",httpMethod = "POST")
+    public int delUser(@RequestParam int id){
+
+        return template.delete("deleteUser",id);
+    }
+
 }
